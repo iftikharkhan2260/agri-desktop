@@ -1,0 +1,13 @@
+{
+  "name": "agri-shop-relay",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Optional standalone relay for Agri Shop -- most shops don't need this; use 'Become Host' inside the app instead.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0"
+  }
+}

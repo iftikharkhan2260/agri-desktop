@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "Agri Shop",
+    "slug": "agri-shop",
+    "version": "2.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": ["**/*"],
+    "android": {
+      "package": "com.agrishop.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#0B3D66"
+      },
+      "permissions": [
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "ACCESS_WIFI_STATE",
+        "READ_EXTERNAL_STORAGE",
+        "READ_MEDIA_IMAGES"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Agri Shop needs access to your photos to add item and logo pictures."
+        }
+      ]
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+Download and place these 5 files in this folder before running the app:
+- NotoSans-Regular.ttf
+- NotoSans-Medium.ttf
+- NotoSans-Bold.ttf
+- NotoNastaliqUrdu-Regular.ttf
+- NotoNastaliqUrdu-Bold.ttf
+
+Get them free from:
+https://fonts.google.com/noto/specimen/Noto+Sans
+https://fonts.google.com/noto/specimen/Noto+Nastaliq+Urdu
+
+See the main README.md "Fonts" section for details.

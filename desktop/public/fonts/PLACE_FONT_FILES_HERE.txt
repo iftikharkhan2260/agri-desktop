@@ -1,0 +1,13 @@
+Download and place these 5 files in this folder before running/building:
+- NotoSans-Regular.ttf
+- NotoSans-Medium.ttf
+- NotoSans-Bold.ttf
+- NotoNastaliqUrdu-Regular.ttf
+- NotoNastaliqUrdu-Bold.ttf
+
+Free download:
+https://fonts.google.com/noto/specimen/Noto+Sans
+https://fonts.google.com/noto/specimen/Noto+Nastaliq+Urdu
+
+These are referenced via @font-face in index.html so printed
+receipts/PDFs (item 2) render correctly in both English and Urdu.
