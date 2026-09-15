@@ -33,6 +33,39 @@ jobs:
         with:
           name: agri-shop-${{ matrix.os }}
           path: |
-            desktop/release/*.exe
-            desktop/release/*.dmg
+            desktop/release/*.exname: Build Agri Shop Windows
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'desktop/**'
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        working-directory: ./desktop
+        run: npm install --legacy-peer-deps
+
+      - name: Build Windows EXE
+        working-directory: ./desktop
+        run: npm run dist
+
+      - name: Upload Windows EXE
+        uses: actions/upload-artifact@v4
+        with:
+          name: agri-shop-windows
+          path: desktop/release/*.exe            desktop/release/*.dmg
             desktop/release/*.AppImage
