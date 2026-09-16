@@ -7,4 +7,9 @@ export default defineConfig({
       include: /\.(js|jsx|ts|tsx)$/,
     }),
   ],
+  resolve: {
+    alias: {
+      "react-native": "react-native-web",
+    },
+  },
 });
